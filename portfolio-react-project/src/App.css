@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+body{
+  background-color: #01155A;
+  font-family: sans-serif;
+}
+
+:root {
+  --background-color: #01155A; /* custom blue */
+  --primary-color: #FF6C2C;
+  --secondary-color: #F7F7F7;  /* custom red */
+  --text-color: #333333;
+}
+
+
+
+
+
+img{
+  padding: 0;
+  margin: 0;
+}
+
+.headerStyle{
+  @apply px-4 py-4 text-lg flex justify-between rounded-[72.18px] shadow-lg
+}
+
+.heroSection{
+  @apply bg-[#F7F7F7] p-5 rounded-[63.3px] shadow-lg flex flex-col items-center text-center 
+}
