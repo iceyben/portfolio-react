@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import { FaPenNib } from "react-icons/fa6";
+import { FaPenNib, FaCode } from "react-icons/fa6";
 import { GrServices } from "react-icons/gr";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SiMaterialdesignicons } from "react-icons/si";
+import { IoDocumentsOutline } from "react-icons/io5";
 
 const Services = () => {
   useEffect(() => {
@@ -61,14 +63,28 @@ const Services = () => {
           className=" bg-[#FFFFFF] shadow-lg rounded-2xl px-5 py-10 flex flex-col justify-center items-center mb-4  "
         >
           <span className="flex h-12 w-12 bg-[var(--primary-color)] rounded-full justify-center items-center mb-4">
-            <FaPenNib className="text-2xl text-white " />
+            <FaCode className="text-2xl text-white " />
           </span>
-          <p className="mb-4 font-bold">UI/UX Design</p>
+          <p className="mb-4 font-bold">Web Development</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            nobis labore fugit perspiciatis. Et minima ratione similique,
-            suscipit odio atque.
+            I craft responsive, user-friendly websites and web apps using modern
+            technologies like React, Tailwind CSS, and Node.js. My focus is on
+            performance, accessibility, and clean code.
+            <br />
+            <strong className="">Deliverables include:</strong>
+            <ul className="list-disc pl-4">
+              <li> Fully responsive websites and web applications</li>
+
+              <li> Clean, maintainable, and scalable code</li>
+
+              <li> Frontend using React & Tailwind CSS</li>
+
+              <li>Backend integration with Node.js & Express</li>
+              <li> Cross-browser compatibility and mobile-first design</li>
+              <li> Deployment and hosting support</li>
+            </ul>
           </p>
+
           <a
             className="buttonEff bg-[var(--primary-color)] px-4 py-2 mt-4 rounded-lg text-white "
             href="#contact"
@@ -77,6 +93,69 @@ const Services = () => {
           </a>
         </div>
         {/**Card 3 start below */}
+        <div
+          data-aos="fade-up"
+          className=" bg-[#FFFFFF] shadow-lg rounded-2xl px-5 py-10 flex flex-col justify-center items-center mb-4  "
+        >
+          <span className="flex h-12 w-12 bg-[var(--primary-color)] rounded-full justify-center items-center mb-4">
+            <SiMaterialdesignicons className="text-2xl text-white " />
+          </span>
+          <p className="mb-4 font-bold">Graphic Design</p>
+          <p>
+            I create visually engaging designs that communicate ideas
+            effectively. My work includes branding, social media content, and
+            marketing materials tailored to your audience.
+            <br />
+            <strong className="">Deliverables include:</strong>
+            <ul className="list-disc pl-4">
+              <li> Logos, banners, and brand identity designs</li>
+              <li> Social media post templates and ads</li>
+              <li> Flyers, posters,brochures, YouTube Banner</li>
+              <li>Business cards and presentation slides</li>
+              <li>Custom illustrations and vector graphics</li>
+              <li>Final files in multiple formats (PNG, JPEG, PDF, SVG)</li>
+            </ul>
+          </p>
+
+          <a
+            className="buttonEff bg-[var(--primary-color)] px-4 py-2 mt-4 rounded-lg text-white "
+            href="#contact"
+          >
+            Hire Me{" "}
+          </a>
+        </div>
+        {/**Card 4 start below */}
+        <div
+          data-aos="fade-up"
+          className=" bg-[#FFFFFF] shadow-lg rounded-2xl px-5 py-10 flex flex-col justify-center items-center mb-4  "
+        >
+          <span className="flex h-12 w-12 bg-[var(--primary-color)] rounded-full justify-center items-center mb-4">
+            <IoDocumentsOutline className="text-2xl text-white " />
+          </span>
+          <p className="mb-4 font-bold">Modern CV & Résumé Design</p>
+          <p>
+            I craft professional, clean, and modern CVs from scratch that help
+            you stand out. Whether you're applying for jobs, internships, or
+            academic opportunities, I’ll design a résumé that highlights your
+            strengths and achievements.
+            <br />
+            <strong className="">Deliverables include:</strong>
+            <ul className="list-disc pl-4">
+              <li> Custom-designed CV tailored to your field</li>
+              <li> Visually appealing and modern design</li>
+              <li> Editable file (Word, PDF, or Canva/Figma link)</li>
+              <li>Cover letter template </li>
+            </ul>
+          </p>
+
+          <a
+            className="buttonEff bg-[var(--primary-color)] px-4 py-2 mt-4 rounded-lg text-white "
+            href="#contact"
+          >
+            Hire Me{" "}
+          </a>
+        </div>
+        {/**Card 5 start below */}
       </div>
     </div>
   );
