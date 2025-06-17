@@ -35,11 +35,7 @@ const About = () => {
           also experienced with version control systems like Git and enjoy
           collaborating in team environments where communication and
           adaptability are key. I value teamwork and pride myself on being able
-          to work well with others in a professional and efficient way. Beyond
-          the frontend, I have foundational knowledge of Node.js and IoT, and
-          I’m currently expanding my skillset into React Native. When it comes
-          to design, I create high-quality visuals using tools like Figma and
-          Canva, ensuring speed and consistency across every project.
+          to work well with others in a professional and efficient way.
         </p>
       </div>
     </div>
