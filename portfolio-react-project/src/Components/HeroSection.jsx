@@ -1,38 +1,77 @@
-import React from 'react'
-import profileImg from '../assets/profile.jpg'
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import React, { useEffect } from "react";
+import profileImg from "../assets/profile.jpg";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import myCV from "../assets/CV.pdf";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
-  return (
-    <div id='hero' className='heroSection   '>
-       
-       <div className=''>
-            <img className='h-56 rounded-full shadow-sm' src={profileImg} alt="" />
-       </div>
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-       <div className=''>
-        <p className='pt-5 text-2xl' > Hello, I'm</p>
-        <h1 className='font-bold text-3xl'><span className='text-[var(--primary-color)]'>Benjamin</span> J. Mulbah</h1>
-        <p className='text-3xl text-[var(--text-color)] pb-5'>
-            Frontend Developer
+  return (
+    <div id="hero" className="heroSection   ">
+      <div data-aos="fade-up" className=" sm:m-auto ">
+        <img
+          className="h-56 sm:h-70 rounded-full shadow-sm  sm:m-auto "
+          src={profileImg}
+          alt=""
+        />
+      </div>
+
+      <div className="sm:align-center ">
+        <p data-aos="fade-up" className="pt-5 text-xl">
+          Hello, I'm
         </p>
-        
-        <span className='space-x-4 '>
-            <a className='btn1  px-6 py-3 text-xl rounded-xl' href="#">Hire Me</a>
-            <a className='btn2 px-6 py-3  text-xl border-2  rounded-xl mb ' href="#">Rusume</a>
+        <h1 className="font-bold text-3xl">
+          <span className="text-[var(--primary-color)]">Benjamin</span> J.
+          Mulbah
+        </h1>
+        <p
+          data-aos="fade-up"
+          className="text-2xl text-[var(--text-color)] pb-5"
+        >
+          Frontend Developer
+        </p>
+
+        <span data-aos="fade-up" className="space-x-4 ">
+          <a
+            className="btn1  px-6 py-3 text-xl rounded-xl sm:px-4 sm:text-lg"
+            href="#contact"
+          >
+            Hire Me
+          </a>
+          <a
+            className="btn2 px-6 py-3  text-xl border-2  rounded-xl mb sm:px-4 sm:py-2.5 sm:text-lg "
+            href={myCV}
+            download
+            target="_blank"
+          >
+            Rusume
+          </a>
         </span>
 
-        <div className='mt-15 mb-5 flex justify-center space-x-4 '>
-            <a href="https://github.com/iceyben"><FaGithub className="text-[var(--primary-color)] iconSize btnAnime " /></a>
-            <a href="#"><FaLinkedin className="text-[var(--background-color)] iconSize btnAnime " /></a>
-            <a href="#"><FaFacebook className="text-blue-700 iconSize btnAnime " /></a>
-            <a href="#"><FaInstagram className="text-red-500 iconSize btnAnime " /></a>
-            
+        <div
+          data-aos="fade-up"
+          className="mt-15 mb-5 flex justify-center space-x-4 "
+        >
+          <a href="https://github.com/iceyben">
+            <FaGithub className="text-[var(--primary-color)] iconSize btnAnime " />
+          </a>
+          <a href="#">
+            <FaLinkedin className="text-[var(--background-color)] iconSize btnAnime " />
+          </a>
+          <a href="#">
+            <FaFacebook className="text-blue-700 iconSize btnAnime " />
+          </a>
+          <a href="#">
+            <FaInstagram className="text-red-500 iconSize btnAnime " />
+          </a>
         </div>
-       </div>
-
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
