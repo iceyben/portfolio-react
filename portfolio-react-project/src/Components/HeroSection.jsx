@@ -4,11 +4,20 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import myCV from "../assets/CV.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const [text] = useTypewriter({
+    words: ["Frontend Developer", "UI/UX Designer", "Graphic Designer"],
+    loop: true,
+    typeSpeed: 80,
+    deleteSpeed: 50,
+    delaySpeed: 1500,
+  });
 
   return (
     <div id="hero" className="heroSection   ">
@@ -30,9 +39,11 @@ const HeroSection = () => {
         </h1>
         <p
           data-aos="fade-up"
-          className="text-2xl text-[var(--text-color)] pb-5"
-        >
-          Frontend Developer
+          className="text-2xl text-[var(--text-color)] pb-5 min-h-[40px] text-center">
+          {text}
+          <span>
+            <Cursor cursorStyle="|" cursorColor="var(--primary-color)" />
+          </span>
         </p>
 
         <span data-aos="fade-up" className="space-x-4 ">
