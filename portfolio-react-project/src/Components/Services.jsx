@@ -32,8 +32,8 @@ const Services = () => {
           <span className="flex h-12 w-12 bg-[var(--primary-color)] rounded-full justify-center items-center mb-4">
             <FaPenNib className="text-2xl text-white " />
           </span>
-          <p className="mb-4 font-bold">UI/UX Design</p>
-          <p>
+          <p  data-aos="fade-up" className="mb-4 font-bold">UI/UX Design</p>
+          <p  data-aos="fade-up">
             I specialize in creating clean, user-friendly, and responsive
             interface designs using tools like Figma. My approach ensures every
             product is both visually appealing and easy to navigate across all
@@ -41,13 +41,13 @@ const Services = () => {
             <br />
             <strong className="">Deliverables include:</strong>
             <ul className="list-disc pl-4">
-              <li> Mobile and responsive layouts</li>
+              <li data-aos="fade-left"> Mobile and responsive layouts</li>
 
-              <li>Wireframes and interactive prototypes (Figma)</li>
+              <li  data-aos="fade-left">Wireframes and interactive prototypes (Figma)</li>
 
-              <li>High-fidelity UI designs</li>
+              <li  data-aos="fade-left">High-fidelity UI designs</li>
 
-              <li>Basic user journey mapping</li>
+              <li  data-aos="fade-left">Basic user journey mapping</li>
             </ul>
           </p>
           <a
