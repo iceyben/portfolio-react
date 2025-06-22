@@ -94,7 +94,7 @@ body{
 }
 
 .iconSize{
-  @apply text-[35px] sm:text-[25px]
+  @apply text-[35px] sm:text-[25px] lg:text-[30px]
 }
 
 .btnAnime{
