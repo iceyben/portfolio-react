@@ -12,7 +12,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[var(--secondary-color)] z-1000 headerStyle flex items-center justify-between px-4 fixed w-full top-0 ">
+    <header className="bg-[var(--secondary-color)] z-[999] headerStyle flex items-center justify-between px-4 fixed w-full top-0 ">
       {/* Logo */}
       <div>
         <a href="../Components/HeroSection">
@@ -62,7 +62,7 @@ const Header = () => {
       {isMenuOpen && (
         <ul
           data-aos="fade-down"
-          className=" navStyle absolute top-[70px] left-0 right-0 bg-[var(--secondary-color)] text-black flex flex-col items-end  gap-4 pt-4 pb-10 rounded-lg pr-5 ml-40 md:hidden z-50 shadow-lg rounded-b-lg sm:top-[50px]"
+          className=" navStyle absolute top-[70px] left-0 right-0 bg-[var(--secondary-color)] text-black flex flex-col items-end  gap-4 pt-4 pb-10 rounded-lg pr-5 ml-40 md:hidden z-[999] shadow-lg rounded-b-lg sm:top-[50px]"
         >
           <li data-aos="fade-down" className=" w-full pl-4  " id="home">
             <a className="" href="#hero" onClick={() => setIsMenuOpen(false)}>

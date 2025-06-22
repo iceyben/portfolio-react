@@ -86,7 +86,7 @@ body{
 }
 
 .headerStyle{
-  @apply h-[70px] px-4 py-4 text-lg flex justify-between  shadow-lg  sm:px-6  overflow-hidden transform-none
+  @apply h-[70px] px-4 py-4 text-lg flex justify-between  shadow-lg  sm:px-6  
 }
 
 .heroSection{

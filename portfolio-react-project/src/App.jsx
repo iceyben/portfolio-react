@@ -15,23 +15,23 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className=" space-y-5 transform-none overflow-hidden ">
-      <div className="sm:pb-5">
-      <Header />
+    <div className=" space-y-5  overflow-hidden ">
+      <div className="sm:pb-5 ">
+        <Header />
       </div>
       <div className="lg:px-20">
-      <HeroSection />
-      <Experience />
-      <About />
-      <Education />
-      <SkillsSlider />
-      <Services />
-      <Projects />
-      <div className="sm:grid sm:grid-cols-2 ">
-        <Contacts />
-        <Footer />
+        <HeroSection />
+        <Experience />
+        <About />
+        <Education />
+        <SkillsSlider />
+        <Services />
+        <Projects />
+        <div className="sm:grid sm:grid-cols-2 ">
+          <Contacts />
+          <Footer />
+        </div>
       </div>
-    </div>
     </div>
   );
 }
