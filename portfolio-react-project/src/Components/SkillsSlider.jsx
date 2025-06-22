@@ -29,13 +29,13 @@ const skills = [
 
 const SkillsSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 768, // mobile
@@ -43,6 +43,7 @@ const SkillsSlider = () => {
           slidesToShow: 1,
         },
       },
+
       {
         breakpoint: 1024, // tablet
         settings: {
@@ -54,7 +55,7 @@ const SkillsSlider = () => {
 
   return (
     <div id="skill" className="mx-5">
-      <div className="w-full max-w-4xl mx-auto  px-4 py-5  ">
+      <div className="w-full max-w-full mx-auto  px-4 py-5  ">
         <h2 className="text-2xl text-white font-bold text-center mb-6">
           My Skills
         </h2>

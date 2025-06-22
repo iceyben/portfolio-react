@@ -20,7 +20,7 @@ const HeroSection = () => {
   });
 
   return (
-    <div id="hero" className="heroSection   ">
+    <div id="hero" className="heroSection  ">
       <div data-aos="fade-up" className=" sm:m-auto ">
         <img
           className="h-56 sm:h-70 rounded-full shadow-sm  sm:m-auto "
@@ -39,7 +39,8 @@ const HeroSection = () => {
         </h1>
         <p
           data-aos="fade-up"
-          className="text-2xl text-[var(--text-color)] pb-5 min-h-[40px] text-center">
+          className="text-2xl text-[var(--text-color)] pb-5 min-h-[40px] text-center lg:text-gray-300"
+        >
           {text}
           <span>
             <Cursor cursorStyle="|" cursorColor="var(--primary-color)" />
@@ -68,10 +69,10 @@ const HeroSection = () => {
           className="mt-15 mb-5 flex justify-center space-x-4 "
         >
           <a href="https://github.com/iceyben">
-            <FaGithub className="text-[var(--primary-color)] iconSize btnAnime " />
+            <FaGithub className="text-[var(--primary-color)] iconSize btnAnime  " />
           </a>
           <a href="#">
-            <FaLinkedin className="text-[var(--background-color)] iconSize btnAnime " />
+            <FaLinkedin className="text-[var(--background-color)] iconSize btnAnime lg:text-white " />
           </a>
           <a href="#">
             <FaFacebook className="text-blue-700 iconSize btnAnime " />

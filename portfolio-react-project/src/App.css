@@ -90,7 +90,7 @@ body{
 }
 
 .heroSection{
-  @apply bg-[#F7F7F7] p-5 rounded-[63.3px] shadow-lg flex flex-col items-center text-center m-5 mt-24 sm:justify-center sm:grid-cols-2 sm:grid 
+  @apply bg-[#F7F7F7] p-5 rounded-[63.3px] shadow-lg flex flex-col items-center text-center m-5 mt-24 sm:justify-center sm:grid-cols-2 sm:grid lg:bg-transparent lg:shadow-none lg:text-white
 }
 
 .iconSize{
