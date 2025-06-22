@@ -15,7 +15,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className=" space-y-5 transform-x-none">
+    <div className=" space-y-5 transform-none overflow-hidden ">
       <div className="sm:pb-5">
       <Header />
       </div>

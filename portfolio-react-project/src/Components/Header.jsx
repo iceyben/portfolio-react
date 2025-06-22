@@ -12,7 +12,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[var(--secondary-color)] z-50 headerStyle flex items-center justify-between px-4 fixed w-full top-0 ">
+    <header className="bg-[var(--secondary-color)] z-1000 headerStyle flex items-center justify-between px-4 fixed w-full top-0 ">
       {/* Logo */}
       <div>
         <a href="../Components/HeroSection">
@@ -48,7 +48,7 @@ const Header = () => {
       </ul>
 
       {/* Menu Icon */}
-      <div className="md:hidden">
+      <div className="md:hidden ">
         <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
             <MdOutlineClose className="text-black text-3xl" />
