@@ -72,13 +72,16 @@ const HeroSection = () => {
           data-aos="fade-up"
           className="mt-15 mb-5 flex justify-center space-x-4 "
         >
-          <a href="https://github.com/iceyben">
+          <a href="https://github.com/iceyben" target="_blank">
             <FaGithub className="text-[var(--primary-color)] iconSize btnAnime  " />
           </a>
-          <a href="#">
+          <a
+            href="www.linkedin.com/in/benjamin-mulbah-8a7a39181"
+            target="_blank"
+          >
             <FaLinkedin className="text-[var(--background-color)] iconSize btnAnime lg:text-white " />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/iceyben">
             <FaFacebook className="text-blue-700 iconSize btnAnime " />
           </a>
           <a href="#">
