@@ -15,7 +15,7 @@ const Header = () => {
     <header className="bg-[var(--secondary-color)] z-[999] headerStyle flex items-center justify-between px-4 fixed w-full top-0 ">
       {/* Logo */}
       <div>
-        <a href="../Components/HeroSection">
+        <a href="#hero">
           <img className="h-10 sm:h-15" src={logoIcon} alt="Logo" />
         </a>
       </div>
@@ -24,7 +24,7 @@ const Header = () => {
       <ul className="hidden md:flex list-none space-x-6 text-black font-medium ">
         <li>
           <a
-            className="buttonEff homeBtn px-6 py-3 font-bold shadow-sm rounded-sm sm:text-2xl"
+            className="buttonEff  px-6 py-3 font-bold shadow-sm rounded-sm sm:text-2xl"
             href="#hero"
           >
             Home
@@ -36,12 +36,15 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a className="menuEff font-medium sm:text-xl" href="#">
+          <a className="menuEff font-medium sm:text-xl" href="#service">
             Services
           </a>
         </li>
         <li>
-          <a className="menuEff font-medium sm:text-xl" href="#">
+          <a
+            className="menuEff homeBtn px-6 py-3 rounded-sm shadow-sm  font-medium sm:text-xl"
+            href="#contact"
+          >
             Hire Me
           </a>
         </li>
